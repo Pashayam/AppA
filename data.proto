@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Text {
+    string data = 1;
+}
+
+service DataNumber {
+    rpc getPhoneNumber(Text) returns(Text){};
+}
